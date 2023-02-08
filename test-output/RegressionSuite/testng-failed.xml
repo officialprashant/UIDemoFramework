@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="RegressionTest(failed)">
+    <classes>
+      <class name="TestCases.loginPageUI">
+        <methods>
+          <include name="verifyUsernamePlaceholder"/>
+          <include name="setup"/>
+          <include name="verifyPasswordPlaceholder"/>
+          <include name="tearDown"/>
+          <include name="loginButtonColor"/>
+        </methods>
+      </class> <!-- TestCases.loginPageUI -->
+      <class name="TestCases.LoginPageTest">
+        <methods>
+          <include name="verifyInvalidLoginErrorMessage"/>
+          <include name="verifySuccessfulLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
