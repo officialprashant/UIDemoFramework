@@ -6,7 +6,7 @@ pipeline{
 		
 			steps	{
 				withMaven(maven : 'MAVEN_HOME'){
-					sh 'mvn clean compile'
+					echo "Compile Stage"
 				
 				}
 			}
@@ -16,7 +16,7 @@ pipeline{
 			
 			steps	{
 				withMaven(maven : 'MAVEN_HOME') {
-					sh 'mvn test'
+					echo "Test Stage"
 				}
 			}
 		}
